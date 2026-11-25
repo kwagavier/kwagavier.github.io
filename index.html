@@ -1,0 +1,1337 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>东莞精品一号w精品_东莞原创影像品牌_城市生活视频社区</title>
+<meta name="description" content="东莞精品一号w精品官方网站，扎根东莞的原创影像品牌与城市生活视频社区，聚焦城市探索、在地文化与创作者故事，持续输出高清正版精品内容。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d2b33'/%3E%3Cpath d='M22 18v28l26-14z' fill='%23ffb340'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --dg-ink:#0d2b33;
+    --dg-ink-soft:#1b414b;
+    --dg-paper:#f3f7f6;
+    --dg-card:#ffffff;
+    --dg-amber:#ffb340;
+    --dg-amber-deep:#e08d13;
+    --dg-teal:#0f6b73;
+    --dg-teal-soft:#dceced;
+    --dg-line:#d5e2e1;
+    --dg-muted:#5d7679;
+    --dg-shadow:0 14px 34px rgba(13,43,51,.10);
+    --dg-radius:16px;
+    --dg-sticky-h:96px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;scroll-padding-top:var(--dg-sticky-h);}
+  body{
+    margin:0;
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+    background:var(--dg-paper);
+    color:var(--dg-ink);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  button{font-family:inherit;cursor:pointer;}
+  .dg-wrap{width:min(1180px,92vw);margin:0 auto;}
+  .dg-skip{position:absolute;left:-9999px;}
+  .dg-skip:focus{left:8px;top:8px;background:var(--dg-amber);padding:8px 14px;border-radius:8px;z-index:999;}
+
+  /* ===== 吸顶：公告条 + 页头 ===== */
+  .dg-sticky{
+    position:sticky;top:0;z-index:120;
+    background:rgba(243,247,246,.94);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--dg-line);
+  }
+  .dg-notice{
+    background:var(--dg-ink);
+    color:#e8f3f2;
+    font-size:13px;
+    letter-spacing:.02em;
+  }
+  .dg-notice .dg-wrap{
+    display:flex;align-items:center;gap:12px;
+    min-height:36px;padding:5px 0;
+  }
+  .dg-notice-tag{
+    background:var(--dg-amber);color:var(--dg-ink);
+    font-weight:700;font-size:11px;padding:2px 8px;border-radius:4px;
+    flex-shrink:0;
+  }
+  .dg-notice-text{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .dg-notice-text b{color:var(--dg-amber);font-weight:600;}
+  .dg-notice-more{color:var(--dg-amber);flex-shrink:0;font-size:12px;border-bottom:1px dashed rgba(255,179,64,.5);}
+
+  .dg-header .dg-wrap{
+    display:flex;align-items:center;gap:20px;
+    min-height:60px;padding:8px 0;
+  }
+  .dg-brand{display:flex;align-items:center;gap:10px;flex-shrink:0;}
+  .dg-brand-mark{
+    width:38px;height:38px;border-radius:11px;
+    background:linear-gradient(140deg,var(--dg-teal),var(--dg-ink));
+    display:grid;place-items:center;color:var(--dg-amber);font-weight:800;font-size:19px;
+  }
+  .dg-brand-name{font-weight:800;font-size:19px;letter-spacing:.02em;line-height:1.2;}
+  .dg-brand-name span{color:var(--dg-amber-deep);}
+  .dg-brand-sub{font-size:11px;color:var(--dg-muted);letter-spacing:.14em;line-height:1.3;}
+
+  .dg-nav{flex:1;display:flex;gap:2px;flex-wrap:wrap;}
+  .dg-nav a{
+    font-size:14px;padding:7px 11px;border-radius:8px;color:var(--dg-ink-soft);
+    transition:background .18s,color .18s;
+  }
+  .dg-nav a:hover{background:var(--dg-teal-soft);color:var(--dg-teal);}
+
+  .dg-search{
+    display:flex;align-items:center;gap:6px;
+    background:#fff;border:1px solid var(--dg-line);border-radius:999px;
+    padding:4px 5px 4px 14px;width:210px;flex-shrink:0;
+  }
+  .dg-search input{
+    border:none;outline:none;background:transparent;width:100%;
+    font-size:13px;color:var(--dg-ink);
+  }
+  .dg-search button{
+    border:none;background:var(--dg-teal);color:#fff;border-radius:999px;
+    padding:5px 13px;font-size:13px;
+  }
+  .dg-burger{
+    display:none;border:1px solid var(--dg-line);background:#fff;border-radius:9px;
+    width:40px;height:36px;font-size:17px;color:var(--dg-ink);line-height:1;
+  }
+  .dg-search-feedback{
+    font-size:12px;color:var(--dg-teal);padding:0 0 8px;
+    display:none;
+  }
+  .dg-search-feedback.is-on{display:block;}
+
+  /* ===== 首屏 6:4 大幅图文 ===== */
+  .dg-hero{padding:44px 0 10px;}
+  .dg-hero-grid{
+    display:grid;grid-template-columns:minmax(0,6fr) minmax(0,4fr);
+    gap:38px;align-items:center;
+  }
+  .dg-eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:12px;letter-spacing:.2em;color:var(--dg-teal);
+    background:var(--dg-teal-soft);padding:5px 13px;border-radius:999px;font-weight:600;
+  }
+  .dg-hero h1{
+    font-size:clamp(28px,4.2vw,46px);line-height:1.22;margin:16px 0 6px;
+    letter-spacing:-.01em;font-weight:800;
+  }
+  .dg-hero h1 em{
+    font-style:normal;
+    background:linear-gradient(transparent 62%,rgba(255,179,64,.6) 62%);
+  }
+  .dg-hero-lead{font-size:17px;color:var(--dg-ink-soft);margin:8px 0 14px;max-width:52ch;}
+  .dg-hero-intro{font-size:14.5px;color:#415f63;margin:0 0 20px;max-width:56ch;}
+  .dg-hero-stats{
+    display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:12px;margin:0 0 22px;
+  }
+  .dg-stat{
+    background:#fff;border:1px solid var(--dg-line);border-radius:13px;
+    padding:12px 14px;
+  }
+  .dg-stat-num{font-size:23px;font-weight:800;color:var(--dg-teal);line-height:1.2;}
+  .dg-stat-num small{font-size:12px;font-weight:600;color:var(--dg-muted);margin-left:2px;}
+  .dg-stat-label{font-size:12px;color:var(--dg-muted);}
+  .dg-hero-actions{display:flex;flex-wrap:wrap;gap:10px;}
+  .dg-btn{
+    display:inline-flex;align-items:center;gap:7px;
+    border-radius:11px;padding:11px 20px;font-size:14.5px;font-weight:600;
+    border:1px solid transparent;transition:transform .16s,box-shadow .16s,background .16s;
+  }
+  .dg-btn:hover{transform:translateY(-2px);}
+  .dg-btn-solid{background:var(--dg-ink);color:#fff;box-shadow:var(--dg-shadow);}
+  .dg-btn-solid:hover{background:var(--dg-teal);}
+  .dg-btn-ghost{background:#fff;border-color:var(--dg-line);color:var(--dg-ink-soft);}
+  .dg-btn-ghost:hover{border-color:var(--dg-teal);color:var(--dg-teal);}
+  .dg-btn-amber{background:var(--dg-amber);color:var(--dg-ink);}
+  .dg-btn-amber:hover{background:var(--dg-amber-deep);color:#fff;}
+
+  .dg-hero-visual{position:relative;}
+  .dg-hero-visual figure{margin:0;border-radius:20px;overflow:hidden;box-shadow:var(--dg-shadow);}
+  .dg-hero-visual img{width:100%;aspect-ratio:4/3;object-fit:cover;}
+  .dg-hero-badge{
+    position:absolute;left:14px;bottom:14px;
+    background:rgba(13,43,51,.86);color:#fff;font-size:12.5px;
+    padding:7px 13px;border-radius:999px;display:inline-flex;align-items:center;gap:8px;
+    max-width:calc(100% - 28px);
+  }
+  .dg-hero-badge i{
+    width:8px;height:8px;border-radius:50%;background:var(--dg-amber);display:inline-block;
+    flex-shrink:0;
+  }
+
+  /* ===== 通用 section ===== */
+  .dg-section{padding:46px 0 8px;}
+  .dg-section-head{margin-bottom:22px;}
+  .dg-kicker{
+    font-size:12px;letter-spacing:.2em;color:var(--dg-amber-deep);
+    font-weight:700;text-transform:uppercase;
+  }
+  .dg-section-head h2{
+    font-size:clamp(21px,2.6vw,29px);margin:6px 0 8px;line-height:1.3;font-weight:800;
+  }
+  .dg-section-head p{margin:0;color:var(--dg-muted);font-size:14.5px;max-width:70ch;}
+  .dg-card{
+    background:var(--dg-card);border:1px solid var(--dg-line);
+    border-radius:var(--dg-radius);padding:22px;
+  }
+
+  /* ===== 热门视频流：一幅重点大图 + 文字列表 ===== */
+  .dg-video-grid{
+    display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);
+    gap:26px;align-items:start;
+  }
+  .dg-video-feature{
+    background:#fff;border:1px solid var(--dg-line);border-radius:20px;overflow:hidden;
+    box-shadow:var(--dg-shadow);
+  }
+  .dg-video-feature figure{margin:0;position:relative;}
+  .dg-video-feature img{width:100%;aspect-ratio:16/9;object-fit:cover;}
+  .dg-play{
+    position:absolute;inset:0;display:grid;place-items:center;
+  }
+  .dg-play span{
+    width:58px;height:58px;border-radius:50%;
+    background:rgba(13,43,51,.72);border:2px solid rgba(255,255,255,.65);
+    display:grid;place-items:center;color:#fff;font-size:19px;padding-left:4px;
+    transition:background .2s,transform .2s;
+  }
+  .dg-video-feature figure:hover .dg-play span{background:var(--dg-amber);color:var(--dg-ink);transform:scale(1.06);}
+  .dg-feature-body{padding:18px 20px 20px;}
+  .dg-tagrow{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;}
+  .dg-tag{
+    font-size:11.5px;padding:2.5px 9px;border-radius:999px;
+    background:var(--dg-teal-soft);color:var(--dg-teal);font-weight:600;
+  }
+  .dg-tag.amber{background:#fff3dd;color:var(--dg-amber-deep);}
+  .dg-feature-body h3{font-size:18.5px;margin:0 0 8px;line-height:1.42;font-weight:700;}
+  .dg-feature-body p{margin:0 0 12px;font-size:13.8px;color:#4a666a;}
+  .dg-meta{
+    display:flex;flex-wrap:wrap;align-items:center;gap:12px;
+    font-size:12.5px;color:var(--dg-muted);margin-bottom:14px;
+  }
+  .dg-avatar{
+    width:26px;height:26px;border-radius:50%;flex-shrink:0;
+    display:grid;place-items:center;font-size:12px;font-weight:700;color:#fff;
+  }
+  .dg-meta .dg-author-inline{display:inline-flex;align-items:center;gap:7px;color:var(--dg-ink-soft);font-weight:600;}
+  .dg-actions{display:flex;flex-wrap:wrap;gap:8px;}
+  .dg-mini{
+    border:1px solid var(--dg-line);background:#fff;border-radius:9px;
+    padding:6px 11px;font-size:12.5px;color:var(--dg-ink-soft);
+    display:inline-flex;align-items:center;gap:5px;transition:all .16s;
+  }
+  .dg-mini:hover{border-color:var(--dg-teal);color:var(--dg-teal);}
+  .dg-mini.is-liked{background:#fff3dd;border-color:var(--dg-amber);color:var(--dg-amber-deep);}
+  .dg-mini.is-saved{background:var(--dg-teal-soft);border-color:var(--dg-teal);color:var(--dg-teal);}
+
+  .dg-video-list{display:flex;flex-direction:column;gap:0;}
+  .dg-vitem{
+    display:grid;grid-template-columns:34px minmax(0,1fr);
+    gap:13px;padding:15px 2px;border-bottom:1px dashed var(--dg-line);
+    transition:background .16s;
+  }
+  .dg-vitem:last-child{border-bottom:none;}
+  .dg-vitem:hover{background:#fff;}
+  .dg-vidx{
+    font-size:15px;font-weight:800;color:var(--dg-amber-deep);
+    font-variant-numeric:tabular-nums;line-height:1.5;
+  }
+  .dg-vitem h3{font-size:15px;margin:0 0 4px;line-height:1.45;font-weight:700;}
+  .dg-vitem p{margin:0 0 6px;font-size:13px;color:#557175;}
+  .dg-vitem .dg-meta{margin:0 0 8px;font-size:12px;gap:10px;}
+
+  /* ===== 关键词解析（长文） ===== */
+  .dg-essay{
+    background:#fff;border:1px solid var(--dg-line);border-radius:20px;
+    padding:clamp(22px,3vw,38px);
+  }
+  .dg-essay h3{font-size:17.5px;margin:22px 0 8px;color:var(--dg-teal);font-weight:800;}
+  .dg-essay h3:first-of-type{margin-top:4px;}
+  .dg-essay p{margin:0 0 12px;font-size:14.5px;color:#3c5b5f;}
+  .dg-essay .dg-pull{
+    border-left:3px solid var(--dg-amber);background:#fffaf0;
+    padding:12px 16px;border-radius:0 10px 10px 0;font-size:14px;color:var(--dg-ink-soft);
+    margin:16px 0;
+  }
+  .dg-essay-cols{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin:16px 0;
+  }
+  .dg-essay-chip{
+    background:var(--dg-teal-soft);border-radius:12px;padding:13px 15px;
+    font-size:13px;color:var(--dg-ink-soft);
+  }
+  .dg-essay-chip b{display:block;font-size:14px;color:var(--dg-teal);margin-bottom:3px;}
+
+  /* ===== 专题 ===== */
+  .dg-topics{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;}
+  .dg-topic{
+    background:#fff;border:1px solid var(--dg-line);border-radius:18px;
+    overflow:hidden;display:flex;flex-direction:column;
+    transition:transform .18s,box-shadow .18s;
+  }
+  .dg-topic:hover{transform:translateY(-3px);box-shadow:var(--dg-shadow);}
+  .dg-topic figure{margin:0;}
+  .dg-topic img{width:100%;aspect-ratio:16/9;object-fit:cover;}
+  .dg-topic-body{padding:16px 18px 18px;flex:1;display:flex;flex-direction:column;}
+  .dg-status{
+    font-size:11.5px;font-weight:700;padding:2.5px 9px;border-radius:999px;
+    align-self:flex-start;margin-bottom:8px;
+  }
+  .dg-status.live{background:#e3f6e8;color:#1c7a3e;}
+  .dg-status.soon{background:#fff3dd;color:var(--dg-amber-deep);}
+  .dg-topic-body h3{font-size:16.5px;margin:0 0 6px;line-height:1.4;font-weight:700;}
+  .dg-topic-body p{margin:0 0 10px;font-size:13.2px;color:#557175;}
+  .dg-topic-list{list-style:none;padding:0;margin:0;font-size:12.8px;color:var(--dg-ink-soft);}
+  .dg-topic-list li{
+    padding:6px 0 6px 16px;position:relative;border-top:1px dashed var(--dg-line);
+  }
+  .dg-topic-list li::before{
+    content:"▸";position:absolute;left:0;color:var(--dg-amber-deep);
+  }
+
+  /* ===== 创作者：单行作者名录 ===== */
+  .dg-authors{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;
+  }
+  .dg-author{
+    background:#fff;border:1px solid var(--dg-line);border-radius:16px;
+    padding:18px;display:flex;gap:14px;align-items:flex-start;
+    transition:border-color .18s,transform .18s;
+  }
+  .dg-author:hover{border-color:var(--dg-teal);transform:translateY(-2px);}
+  .dg-author .dg-avatar{width:50px;height:50px;font-size:19px;}
+  .dg-author-main{min-width:0;flex:1;}
+  .dg-author-main h3{font-size:15.5px;margin:0 0 2px;font-weight:800;}
+  .dg-author-field{font-size:12px;color:var(--dg-amber-deep);font-weight:600;margin-bottom:5px;}
+  .dg-author-nums{font-size:11.8px;color:var(--dg-muted);margin-bottom:6px;}
+  .dg-author-main p{margin:0;font-size:12.8px;color:#557175;}
+
+  /* ===== 用户评价：双列短评 ===== */
+  .dg-comments{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;
+  }
+  .dg-comment{
+    background:#fff;border:1px solid var(--dg-line);border-radius:14px;
+    padding:16px 18px;display:flex;flex-direction:column;gap:8px;
+  }
+  .dg-comment-top{display:flex;align-items:center;gap:9px;}
+  .dg-comment-top .dg-avatar{width:30px;height:30px;font-size:12.5px;}
+  .dg-comment-name{font-size:13.5px;font-weight:700;}
+  .dg-comment-when{font-size:11.5px;color:var(--dg-muted);}
+  .dg-comment p{margin:0;font-size:13.2px;color:#446065;}
+  .dg-stars{color:var(--dg-amber-deep);font-size:12.5px;letter-spacing:2px;}
+
+  /* ===== 图文索引 + 品牌动态 ===== */
+  .dg-split{
+    display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:26px;align-items:start;
+  }
+  .dg-index{display:flex;flex-direction:column;gap:14px;}
+  .dg-index-item{
+    display:grid;grid-template-columns:132px minmax(0,1fr);gap:15px;
+    background:#fff;border:1px solid var(--dg-line);border-radius:14px;overflow:hidden;
+    transition:border-color .16s;
+  }
+  .dg-index-item:hover{border-color:var(--dg-teal);}
+  .dg-index-item img{width:100%;height:100%;min-height:92px;object-fit:cover;aspect-ratio:4/3;}
+  .dg-index-body{padding:12px 14px 12px 0;}
+  .dg-index-body h3{font-size:14.6px;margin:0 0 4px;line-height:1.4;font-weight:700;}
+  .dg-index-body p{margin:0 0 5px;font-size:12.6px;color:#557175;}
+  .dg-index-body .dg-meta{margin:0;font-size:11.6px;gap:9px;}
+
+  .dg-timeline{list-style:none;margin:0;padding:0;}
+  .dg-timeline li{
+    position:relative;padding:0 0 18px 22px;border-left:2px solid var(--dg-line);
+  }
+  .dg-timeline li:last-child{border-left-color:transparent;padding-bottom:0;}
+  .dg-timeline li::before{
+    content:"";position:absolute;left:-6px;top:6px;width:10px;height:10px;
+    border-radius:50%;background:var(--dg-amber);border:2px solid #fff;
+  }
+  .dg-timeline time{font-size:11.5px;color:var(--dg-amber-deep);font-weight:700;}
+  .dg-timeline h3{font-size:14.2px;margin:2px 0 3px;font-weight:700;}
+  .dg-timeline p{margin:0;font-size:12.8px;color:#557175;}
+
+  /* ===== 合作墙 ===== */
+  .dg-partners{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;
+  }
+  .dg-partner{
+    background:#fff;border:1px dashed var(--dg-line);border-radius:12px;
+    padding:14px 12px;text-align:center;font-size:13px;font-weight:700;color:var(--dg-ink-soft);
+  }
+  .dg-partner small{display:block;font-weight:400;font-size:11.5px;color:var(--dg-muted);margin-top:2px;}
+
+  /* ===== FAQ ===== */
+  .dg-faq{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:12px;
+  }
+  .dg-faq details{
+    background:#fff;border:1px solid var(--dg-line);border-radius:12px;
+    padding:0 16px;overflow:hidden;
+  }
+  .dg-faq details[open]{border-color:var(--dg-teal);}
+  .dg-faq summary{
+    cursor:pointer;list-style:none;padding:13px 0;font-size:14px;font-weight:700;
+    display:flex;justify-content:space-between;align-items:center;gap:10px;
+  }
+  .dg-faq summary::-webkit-details-marker{display:none;}
+  .dg-faq summary::after{content:"＋";color:var(--dg-teal);font-size:15px;}
+  .dg-faq details[open] summary::after{content:"－";}
+  .dg-faq details p{margin:0 0 14px;font-size:13.2px;color:#4d6a6e;}
+
+  /* ===== 投稿 CTA ===== */
+  .dg-cta{
+    background:linear-gradient(120deg,var(--dg-ink),var(--dg-teal));
+    border-radius:20px;padding:clamp(24px,4vw,42px);color:#eaf5f4;
+    display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);
+    gap:26px;align-items:center;
+  }
+  .dg-cta h2{font-size:clamp(20px,2.6vw,27px);margin:0 0 8px;color:#fff;}
+  .dg-cta p{margin:0;font-size:13.8px;color:#cfe4e3;}
+  .dg-cta-side{display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end;}
+  .dg-cta-side .dg-btn-ghost{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.34);color:#fff;}
+  .dg-cta-side .dg-btn-ghost:hover{background:rgba(255,255,255,.2);border-color:#fff;color:#fff;}
+
+  /* ===== 页脚 ===== */
+  .dg-footer{
+    margin-top:52px;background:var(--dg-ink);color:#bcd4d3;padding:40px 0 26px;
+  }
+  .dg-footer-grid{
+    display:grid;grid-template-columns:minmax(0,1.5fr) repeat(2,minmax(0,1fr)) minmax(0,1fr);
+    gap:26px;
+  }
+  .dg-footer h3{font-size:13.5px;color:#fff;margin:0 0 10px;}
+  .dg-footer p{margin:0 0 8px;font-size:12.8px;line-height:1.8;}
+  .dg-footer ul{list-style:none;padding:0;margin:0;font-size:12.8px;}
+  .dg-footer li{margin-bottom:6px;}
+  .dg-footer a:hover{color:var(--dg-amber);}
+  .dg-footer-brand{font-size:17px;color:#fff;font-weight:800;margin-bottom:8px;}
+  .dg-footer-bottom{
+    margin-top:26px;padding-top:16px;border-top:1px solid rgba(255,255,255,.13);
+    font-size:12px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;
+  }
+
+  /* ===== 回到顶部 ===== */
+  .dg-totop{
+    position:fixed;right:20px;bottom:22px;z-index:130;
+    width:44px;height:44px;border-radius:50%;border:none;
+    background:var(--dg-ink);color:#fff;font-size:17px;
+    box-shadow:var(--dg-shadow);opacity:0;pointer-events:none;transition:opacity .22s,transform .22s;
+    transform:translateY(10px);
+  }
+  .dg-totop.is-show{opacity:1;pointer-events:auto;transform:translateY(0);}
+
+  /* ===== 弹窗 / Toast ===== */
+  .dg-modal{
+    position:fixed;inset:0;z-index:200;display:none;
+    background:rgba(9,30,36,.55);padding:20px;overflow:auto;
+  }
+  .dg-modal.is-open{display:grid;place-items:center;}
+  .dg-modal-box{
+    background:#fff;border-radius:18px;max-width:520px;width:100%;
+    padding:24px;box-shadow:0 30px 70px rgba(0,0,0,.3);position:relative;
+  }
+  .dg-modal-box h3{margin:0 0 6px;font-size:18px;}
+  .dg-modal-box p{margin:0 0 16px;font-size:13.5px;color:#4d6a6e;}
+  .dg-modal-close{
+    position:absolute;top:12px;right:14px;border:none;background:transparent;
+    font-size:20px;color:var(--dg-muted);line-height:1;
+  }
+  .dg-field{display:block;margin-bottom:12px;font-size:13px;color:var(--dg-ink-soft);}
+  .dg-field input,.dg-field textarea{
+    display:block;width:100%;margin-top:5px;padding:9px 12px;font-size:13.5px;
+    border:1px solid var(--dg-line);border-radius:10px;font-family:inherit;color:var(--dg-ink);
+    background:#fbfdfc;
+  }
+  .dg-field textarea{min-height:88px;resize:vertical;}
+  .dg-toast{
+    position:fixed;left:50%;bottom:34px;transform:translate(-50%,16px);
+    background:var(--dg-ink);color:#fff;padding:10px 20px;border-radius:999px;
+    font-size:13px;z-index:300;opacity:0;pointer-events:none;transition:all .24s;
+    max-width:88vw;text-align:center;
+  }
+  .dg-toast.is-show{opacity:1;transform:translate(-50%,0);}
+
+  /* ===== 响应式 ===== */
+  @media (max-width:980px){
+    .dg-hero-grid{grid-template-columns:1fr;gap:26px;}
+    .dg-video-grid{grid-template-columns:1fr;}
+    .dg-split{grid-template-columns:1fr;}
+    .dg-cta{grid-template-columns:1fr;}
+    .dg-cta-side{justify-content:flex-start;}
+    .dg-footer-grid{grid-template-columns:1fr 1fr;}
+    .dg-search{display:none;}
+  }
+  @media (max-width:760px){
+    :root{--dg-sticky-h:100px;}
+    .dg-burger{display:block;margin-left:auto;}
+    .dg-nav{
+      display:none;width:100%;order:5;flex-direction:column;gap:0;
+      border-top:1px solid var(--dg-line);margin-top:8px;padding-top:8px;
+    }
+    .dg-nav.is-open{display:flex;}
+    .dg-nav a{padding:10px 4px;border-radius:8px;}
+    .dg-header .dg-wrap{flex-wrap:wrap;gap:10px;}
+    .dg-brand-sub{display:none;}
+    .dg-hero-stats{grid-template-columns:1fr 1fr;}
+    .dg-index-item{grid-template-columns:104px minmax(0,1fr);}
+    .dg-footer-grid{grid-template-columns:1fr;}
+    .dg-notice-more{display:none;}
+    .dg-notice-text{white-space:normal;}
+  }
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+<a class="dg-skip" href="#dg-main">跳到主要内容</a>
+
+<div class="dg-sticky">
+  <div class="dg-notice">
+    <div class="dg-wrap">
+      <span class="dg-notice-tag">官方发布</span>
+      <span class="dg-notice-text">东莞精品一号w精品 11 月 22 日上线「街巷里的东莞」第 3 季 6 集，并开启 <b>2026 城市影像征集赛</b> 报名通道，投稿即进入年度精品内容评选。</span>
+      <a class="dg-notice-more" href="#dg-dynamic">查看更新</a>
+    </div>
+  </div>
+  <header class="dg-header">
+    <div class="dg-wrap">
+      <a class="dg-brand" href="#dg-main" aria-label="东莞精品一号w精品 官方网站首页">
+        <span class="dg-brand-mark" aria-hidden="true">精</span>
+        <span>
+          <span class="dg-brand-name">东莞精品一号<span>w精品</span></span>
+          <span class="dg-brand-sub">DONGGUAN CRAFT NO.1</span>
+        </span>
+      </a>
+      <nav class="dg-nav" id="dg-nav" aria-label="主导航">
+        <a href="#dg-focus">焦点内容</a>
+        <a href="#dg-essay">城市解析</a>
+        <a href="#dg-topics">专题企划</a>
+        <a href="#dg-authors">创作者</a>
+        <a href="#dg-voice">用户口碑</a>
+        <a href="#dg-dynamic">企业动态</a>
+        <a href="#dg-faq">帮助中心</a>
+      </nav>
+      <form class="dg-search" id="dg-search-form" role="search" aria-label="站内搜索">
+        <input type="search" id="dg-search-input" placeholder="搜索视频、创作者、专题" aria-label="搜索关键词">
+        <button type="submit">搜索</button>
+      </form>
+      <button class="dg-burger" id="dg-burger" aria-expanded="false" aria-controls="dg-nav" aria-label="展开导航">☰</button>
+    </div>
+    <div class="dg-wrap">
+      <p class="dg-search-feedback" id="dg-search-feedback" role="status"></p>
+    </div>
+  </header>
+</div>
+
+<main id="dg-main">
+
+  <!-- 首屏 -->
+  <section class="dg-hero" aria-labelledby="dg-hero-title">
+    <div class="dg-wrap dg-hero-grid">
+      <div>
+        <span class="dg-eyebrow">东莞原创影像品牌 · 官方网站</span>
+        <h1 id="dg-hero-title"><em>东莞精品一号w精品</em>：把这座城市的日常，拍成值得收藏的精品</h1>
+        <p class="dg-hero-lead">一家持续运营的城市视频品牌，用高清正版内容记录东莞的街巷、工厂、水乡与人群。</p>
+        <p class="dg-hero-intro">作为深耕本土的原创视频企业，东莞精品一号w精品官方网站面向创作者与品牌方开放内容生态：这里既有城市探索纪录，也有实用教程与深度访谈，每一支片子都由本地团队实地拍摄、独立剪辑、正版授权发布，我们希望以匠心影像陪伴每一位想读懂东莞的人。</p>
+        <div class="dg-hero-stats">
+          <div class="dg-stat">
+            <div class="dg-stat-num" data-dg-count="1286">0<small>支</small></div>
+            <div class="dg-stat-label">原创正版影像</div>
+          </div>
+          <div class="dg-stat">
+            <div class="dg-stat-num" data-dg-count="247">0<small>位</small></div>
+            <div class="dg-stat-label">认证创作者</div>
+          </div>
+          <div class="dg-stat">
+            <div class="dg-stat-num" data-dg-count="96">0<small>%</small></div>
+            <div class="dg-stat-label">用户口碑好评</div>
+          </div>
+        </div>
+        <div class="dg-hero-actions">
+          <a class="dg-btn dg-btn-solid" href="#dg-focus">观看本期焦点 ▶</a>
+          <a class="dg-btn dg-btn-amber" href="#dg-cta">报名影像征集赛</a>
+          <a class="dg-btn dg-btn-ghost" href="#dg-topics">浏览专题企划</a>
+        </div>
+      </div>
+      <div class="dg-hero-visual">
+        <figure>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Cdefs%3E%3ClinearGradient id='h1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230f6b73'/%3E%3Cstop offset='1' stop-color='%230d2b33'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='600' fill='url(%23h1)'/%3E%3Ccircle cx='640' cy='120' r='74' fill='%23ffb340' opacity='.9'/%3E%3Cpath d='M0 470 Q170 380 340 440 T800 400 V600 H0Z' fill='%231b414b'/%3E%3Cpath d='M0 500 Q210 430 420 486 T800 452 V600 H0Z' fill='%230d2b33' opacity='.85'/%3E%3Cg fill='%23f3f7f6' opacity='.92'%3E%3Crect x='96' y='252' width='72' height='188'/%3E%3Crect x='186' y='200' width='60' height='240'/%3E%3Crect x='264' y='292' width='48' height='148'/%3E%3Crect x='330' y='232' width='82' height='208'/%3E%3C/g%3E%3Cg fill='%23ffb340'%3E%3Crect x='112' y='276' width='14' height='18'/%3E%3Crect x='140' y='276' width='14' height='18'/%3E%3Crect x='112' y='312' width='14' height='18'/%3E%3Crect x='140' y='312' width='14' height='18'/%3E%3Crect x='200' y='224' width='14' height='18'/%3E%3Crect x='228' y='224' width='14' height='18'/%3E%3Crect x='348' y='256' width='16' height='20'/%3E%3Crect x='378' y='256' width='16' height='20'/%3E%3C/g%3E%3Cg stroke='%23ffb340' stroke-width='3' fill='none' opacity='.7'%3E%3Cpath d='M540 380 q60 -46 120 0'/%3E%3Cpath d='M560 410 q40 -30 80 0'/%3E%3C/g%3E%3Ctext x='96' y='110' font-family='sans-serif' font-size='42' fill='%23f3f7f6' font-weight='bold'%3E城市 · 影像%3C/text%3E%3Ctext x='96' y='152' font-family='sans-serif' font-size='20' fill='%23ffb340' letter-spacing='4'%3EDONGGUAN STORIES%3C/text%3E%3C/svg%3E" alt="东莞精品一号w精品品牌主视觉：夜色中的城市楼宇轮廓与金色光点" width="800" height="600">
+        </figure>
+        <span class="dg-hero-badge"><i></i>正在热映 · 街巷里的东莞 第 3 季</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点内容 + 热门视频流 -->
+  <section class="dg-section" id="dg-focus" aria-labelledby="dg-focus-title">
+    <div class="dg-wrap">
+      <div class="dg-section-head">
+        <span class="dg-kicker">Featured</span>
+        <h2 id="dg-focus-title">焦点内容：东莞精品一号w精品本期主推的精品影像</h2>
+        <p>由编辑部从近 30 天的原创投稿与自制片单中筛选，兼顾观看热度、内容品质与本地真实细节，每一支都可高清播放。</p>
+      </div>
+
+      <div class="dg-video-grid">
+        <article class="dg-video-feature">
+          <figure>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f6b352'/%3E%3Cstop offset='1' stop-color='%23c0642a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23f1)'/%3E%3Ccircle cx='650' cy='96' r='58' fill='%23fff3dd' opacity='.85'/%3E%3Crect x='0' y='300' width='800' height='150' fill='%23803d1c' opacity='.55'/%3E%3Cg fill='%233a2416'%3E%3Crect x='70' y='150' width='120' height='160'/%3E%3Crect x='210' y='186' width='86' height='124'/%3E%3Crect x='316' y='128' width='142' height='182'/%3E%3Crect x='478' y='196' width='96' height='114'/%3E%3C/g%3E%3Cg fill='%23ffe1b3' opacity='.9'%3E%3Crect x='90' y='176' width='22' height='26'/%3E%3Crect x='126' y='176' width='22' height='26'/%3E%3Crect x='90' y='222' width='22' height='26'/%3E%3Crect x='336' y='154' width='28' height='30'/%3E%3Crect x='384' y='154' width='28' height='30'/%3E%3Crect x='336' y='206' width='28' height='30'/%3E%3C/g%3E%3Cpath d='M0 336 q180 -34 360 6 t440 -12' stroke='%23ffd79a' stroke-width='4' fill='none' opacity='.8'/%3E%3Ctext x='70' y='80' font-family='sans-serif' font-size='34' font-weight='bold' fill='%233a2416'%3E老城骑楼晨光%3C/text%3E%3Ctext x='70' y='112' font-family='sans-serif' font-size='17' fill='%235a3418' letter-spacing='3'%3E5:40 A.M. · DONGGUAN%3C/text%3E%3C/svg%3E" alt="视频封面：清晨六点的东莞老城骑楼街道与晨光" width="800" height="450">
+            <div class="dg-play" aria-hidden="true"><span>▶</span></div>
+          </figure>
+          <div class="dg-feature-body">
+            <div class="dg-tagrow">
+              <span class="dg-tag amber">本期焦点</span>
+              <span class="dg-tag">城市探索</span>
+              <span class="dg-tag">在地文化</span>
+            </div>
+            <h3>《老城骑楼晨光》：跟着镜头走一遍东莞 5:40 的街</h3>
+            <p>从振华路的骑楼到市场门口的肠粉摊，我们用 12 分钟记录一条街如何醒来。拍摄团队连续七天蹲守同一个路口，只为了等一场薄雾与第一缕斜光同时落在骑楼廊柱上的那一刻。</p>
+            <div class="dg-meta">
+              <span class="dg-author-inline"><span class="dg-avatar" style="background:#0f6b73">林</span>林砚舟</span>
+              <span>播放 12.8 万</span>
+              <span>点赞 <b data-dg-like-num="9240">9240</b></span>
+              <span>收藏 3120</span>
+            </div>
+            <div class="dg-actions">
+              <button class="dg-mini" data-dg-like>♥ 点赞</button>
+              <button class="dg-mini" data-dg-save>☆ 收藏</button>
+              <button class="dg-mini" data-dg-share>复制链接</button>
+              <button class="dg-mini" data-dg-comment>查看评论</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="dg-video-list">
+          <article class="dg-vitem">
+            <span class="dg-vidx">01</span>
+            <div>
+              <h3>《一双手的三十年》：莞城竹编师傅的一天</h3>
+              <p>老师傅从选竹、破篾到收口，全程无替身。我们拍下了 47 道工序里最容易失手的三处细节。</p>
+              <div class="dg-tagrow"><span class="dg-tag">人物访谈</span><span class="dg-tag">手作DIY</span></div>
+              <div class="dg-meta">
+                <span class="dg-author-inline"><span class="dg-avatar" style="background:#c0642a">苏</span>苏槿</span>
+                <span>播放 8.6 万</span>
+                <span>点赞 <b data-dg-like-num="6110">6110</b></span>
+              </div>
+              <div class="dg-actions">
+                <button class="dg-mini" data-dg-like>♥ 点赞</button>
+                <button class="dg-mini" data-dg-save>☆ 收藏</button>
+                <button class="dg-mini" data-dg-comment>评论</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="dg-vitem">
+            <span class="dg-vidx">02</span>
+            <div>
+              <h3>《工厂夜班》：制造业一线 8 小时的节奏感</h3>
+              <p>没有旁白，只有机器声与交接班的脚步声。这是本季最安静也最有力量的一集。</p>
+              <div class="dg-tagrow"><span class="dg-tag">行业观察</span><span class="dg-tag">真实记录</span></div>
+              <div class="dg-meta">
+                <span class="dg-author-inline"><span class="dg-avatar" style="background:#1b414b">陈</span>陈屿</span>
+                <span>播放 15.2 万</span>
+                <span>点赞 <b data-dg-like-num="11030">11030</b></span>
+              </div>
+              <div class="dg-actions">
+                <button class="dg-mini" data-dg-like>♥ 点赞</button>
+                <button class="dg-mini" data-dg-save>☆ 收藏</button>
+                <button class="dg-mini" data-dg-comment>评论</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="dg-vitem">
+            <span class="dg-vidx">03</span>
+            <div>
+              <h3>《水乡的下午三点》：麻涌河涌与龙舟队</h3>
+              <p>龙舟队训练结束后的那段闲聊，比任何解说都更能说明东莞人和水的关系。</p>
+              <div class="dg-tagrow"><span class="dg-tag">城市探索</span><span class="dg-tag">治愈影像</span></div>
+              <div class="dg-meta">
+                <span class="dg-author-inline"><span class="dg-avatar" style="background:#2f8a6e">何</span>何知遥</span>
+                <span>播放 6.4 万</span>
+                <span>点赞 <b data-dg-like-num="4880">4880</b></span>
+              </div>
+              <div class="dg-actions">
+                <button class="dg-mini" data-dg-like>♥ 点赞</button>
+                <button class="dg-mini" data-dg-save>☆ 收藏</button>
+                <button class="dg-mini" data-dg-comment>评论</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="dg-vitem">
+            <span class="dg-vidx">04</span>
+            <div>
+              <h3>《三分钟学会手机拍街景》：创作者实操课</h3>
+              <p>从构图、曝光到后期调色，用一部手机拍出有东莞气质的街头短片，附参数截图。</p>
+              <div class="dg-tagrow"><span class="dg-tag">教程干货</span><span class="dg-tag">实用技巧</span></div>
+              <div class="dg-meta">
+                <span class="dg-author-inline"><span class="dg-avatar" style="background:#e08d13">罗</span>罗一戈</span>
+                <span>播放 9.9 万</span>
+                <span>点赞 <b data-dg-like-num="7340">7340</b></span>
+              </div>
+              <div class="dg-actions">
+                <button class="dg-mini" data-dg-like>♥ 点赞</button>
+                <button class="dg-mini" data-dg-save>☆ 收藏</button>
+                <button class="dg-mini" data-dg-comment>评论</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关键词解析长文 -->
+  <section class="dg-section" id="dg-essay" aria-labelledby="dg-essay-title">
+    <div class="dg-wrap">
+      <div class="dg-section-head">
+        <span class="dg-kicker">Deep Read</span>
+        <h2 id="dg-essay-title">从一支片子到一座城：东莞精品一号w精品的内容方法论</h2>
+        <p>我们如何理解“精品”二字，又如何把它变成可被持续观看的视频内容。</p>
+      </div>
+      <div class="dg-essay">
+        <h3>为什么要在东莞做一家影像品牌</h3>
+        <p>很多外地朋友对东莞的印象停留在几个标签上，但真正走过这里的人知道，它是一座由镇街、厂房、河涌、市场和老街共同拼起来的城市，层次非常丰富。东莞精品一号w精品的起点，就是想在标签之外补上更多具体的人与场景。2019 年冬天，团队只有三个人、一台二手相机和一辆电动车，我们拍的第一支片子是南城一家开了二十年的糖水铺，老板说起自己年轻时在工厂上夜班的经历，那段素材后来成了品牌最早的口碑来源。此后三年，我们逐步建立起选题会、勘景、拍摄、后期、审片、上线的标准流程，每一支片子上线前都要过三道审片，确认事实准确、授权清晰、画质达标。这也是“精品”两个字的实际成本：不是滤镜，而是流程。</p>
+        <p>作为一家东莞本土的视频企业，我们并不追求高频产出，而是把每年可控的产能集中投在几条主线上：城市纪录、手艺人访谈、行业观察与实用教程。官方发布的内容全部为原创正版，高清素材保留完整工程文件，方便后续授权合作与二次剪辑。我们也清楚，单靠一家公司的产能不可能覆盖整座城市，所以官方网站从一开始就设计了创作者入驻与投稿入口，让更多本地拍摄者把镜头对准自己熟悉的街巷。</p>
+        <div class="dg-essay-cols">
+          <div class="dg-essay-chip"><b>选题标准</b>是否有具体的人、具体的地点、具体的时间，而不是空泛的城市宣传语。</div>
+          <div class="dg-essay-chip"><b>审片三道关</b>事实核对、授权确认、画质与声音验收，任一不过即退回修改。</div>
+          <div class="dg-essay-chip"><b>素材归档</b>原始素材按项目编号归档，保留 5 年，支持正版授权调用。</div>
+        </div>
+        <h3>“精品”意味着什么：三条硬标准</h3>
+        <p>第一条是真实。我们不摆拍、不制造冲突、不替受访者写台词。拍摄工厂夜班那集时，团队在车间外等了四个小时，只为拍到交接班时那段自然发生的对话。第二条是克制。镜头语言尽量安静，让环境声和人物原声承担叙事，减少煽情配乐。第三条是可复用。每支视频都配套一份文字索引与关键信息摘要，观众可以只看三分钟，也可以顺着索引深入了解某个手艺或某条街的历史。这三点构成了东莞精品一号w精品的内容底线，也是我们在社区里被反复提到的原因。</p>
+        <p>在视觉上，我们逐渐形成了偏暖的胶片质感：低饱和的绿、老墙的米黄、傍晚的橙色灯光。这种调性不是为了好看，而是因为它接近东莞大多数街区的真实光线。很多创作者在投稿时会主动询问调色参考，我们索性把 LUT 参数与拍摄清单整理成公开攻略，放在创作灵感板块里，任何人都可以下载使用。我们相信，正版与开放并不矛盾，真正的护城河是持续产出与本地理解力。</p>
+        <h3>内容生态如何运转：创作者、品牌与社区</h3>
+        <p>官方网站目前由四条线共同支撑。第一条是自制内容，由编辑部主导，每月稳定上线 4 至 6 支城市纪录与访谈。第二条是创作者计划，通过认证的创作者可以上传作品、参与专题共创、获得拍摄设备与场地的支持。第三条是品牌合作，我们为本地企业与机构提供定制影像服务，从脚本到成片全流程执行，合作案例会在企业动态中同步公开。第四条是社区互动，用户的评价、投票与投稿会直接影响下一季的选题方向，热度榜与口碑榜每月更新一次。</p>
+        <p>这套机制跑下来，最直观的变化是内容变厚了。早期我们只能拍自己想到的选题，现在每个月会收到上百条投稿线索，其中不少来自在东莞生活多年的人，他们知道哪条巷子几点有光、哪家店周三休息。编辑部的角色也从“拍摄者”逐渐转向“筛选者与打磨者”。为了保证品质，我们对所有入选作品提供一次免费的精剪辅导，帮助创作者把素材整理成更完整的故事。这个过程本身也在培养本地的影像人才，是品牌社会责任的一部分。</p>
+        <div class="dg-essay-cols">
+          <div class="dg-essay-chip"><b>自制内容</b>每月 4–6 支，城市纪录与人物访谈为主，全部高清正版。</div>
+          <div class="dg-essay-chip"><b>创作者计划</b>认证后可投稿、共创、申请设备与场地支持。</div>
+          <div class="dg-essay-chip"><b>品牌合作</b>定制影像服务，脚本到成片全流程，案例公开。</div>
+        </div>
+        <h3>未来的方向：把城市档案做成长期工程</h3>
+        <p>接下来一年，东莞精品一号w精品会把重心放在“城市影像档案”上。我们计划按镇街划分，为每个片区建立独立的影像条目，记录标志性街景、老店、手艺与节庆，并逐步开放检索。这项工程周期很长，但它能让十年后的人仍能看到今天的东莞是什么样子。同时，我们会在官方网站上线创作者成长体系，用作品数据、社区评价与专题参与度综合评定等级，等级越高可获得更多拍摄资源与联合出品机会。我们希望这不是一个只看播放量的平台，而是一个愿意为品质和真实付出耐心的内容社区。</p>
+        <p>如果你也在这座城市生活，欢迎带着你的素材来投稿。不必是专业设备，不必是宏大叙事，一条街、一个人、一段声音都可以成为起点。东莞精品一号w精品会继续以匠心做内容，以开放做社区，把这座城市的日常，拍成值得收藏的精品。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="dg-section" id="dg-topics" aria-labelledby="dg-topics-title">
+    <div class="dg-wrap">
+      <div class="dg-section-head">
+        <span class="dg-kicker">Series</span>
+        <h2 id="dg-topics-title">专题企划：东莞精品一号w精品的长期内容工程</h2>
+        <p>专题按季度推进，每个专题下设固定条目，更新状态公开可查，欢迎创作者参与共创。</p>
+      </div>
+      <div class="dg-topics">
+        <article class="dg-topic">
+          <figure>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%231b414b'/%3E%3Ccircle cx='520' cy='80' r='46' fill='%23ffb340'/%3E%3Cpath d='M0 250 L120 180 L230 236 L340 160 L470 226 L640 150 V360 H0Z' fill='%230f6b73' opacity='.7'/%3E%3Cpath d='M40 300 h150 M40 322 h96' stroke='%23f3f7f6' stroke-width='7' stroke-linecap='round' opacity='.8'/%3E%3Ctext x='40' y='86' font-family='sans-serif' font-size='30' font-weight='bold' fill='%23f3f7f6'%3E街巷里的东莞%3C/text%3E%3Ctext x='40' y='120' font-family='sans-serif' font-size='15' fill='%23ffb340' letter-spacing='3'%3ESEASON 03%3C/text%3E%3C/svg%3E" alt="专题封面：东莞街巷轮廓与夕阳下的城市天际线" width="640" height="360">
+          </figure>
+          <div class="dg-topic-body">
+            <span class="dg-status live">更新中 · 已上线 6 集</span>
+            <h3>街巷里的东莞 第 3 季</h3>
+            <p>以镇街为单位，一集一条街，记录骑楼、市场、祠堂与街角小店。</p>
+            <ul class="dg-topic-list">
+              <li>第 4 集《振华路的早晨》· 林砚舟</li>
+              <li>第 5 集《桥头老街的糖水铺》· 苏槿</li>
+              <li>第 6 集《中堂的渡口》· 何知遥</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="dg-topic">
+          <figure>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23f0e2c8'/%3E%3Cg stroke='%23a8763c' stroke-width='6' fill='none'%3E%3Cpath d='M60 300 q60 -120 140 -140 q80 -20 120 60'/%3E%3Cpath d='M340 220 q40 70 120 60 q70 -10 100 -80'/%3E%3C/g%3E%3Cg fill='%23c0642a'%3E%3Ccircle cx='200' cy='160' r='26'/%3E%3Ccircle cx='460' cy='220' r='20'/%3E%3C/g%3E%3Cg fill='%23803d1c'%3E%3Crect x='70' y='70' width='96' height='12' rx='6'/%3E%3Crect x='70' y='96' width='64' height='12' rx='6'/%3E%3C/g%3E%3Ctext x='70' y='56' font-family='sans-serif' font-size='27' font-weight='bold' fill='%23803d1c'%3E一双手的手艺%3C/text%3E%3C/svg%3E" alt="专题封面：竹篾与双手编织的线条构图" width="640" height="360">
+          </figure>
+          <div class="dg-topic-body">
+            <span class="dg-status live">更新中 · 已上线 4 集</span>
+            <h3>一双手的手艺</h3>
+            <p>竹编、木作、裁缝、糖画，走进东莞手艺人的工作台，记录工具与手的关系。</p>
+            <ul class="dg-topic-list">
+              <li>《破篾的人》· 莞城竹编工作室</li>
+              <li>《一块木头的十年》· 苏槿</li>
+              <li>《缝纫机不停》· 罗一戈</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="dg-topic">
+          <figure>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%232f8a6e'/%3E%3Cpath d='M0 230 q160 -40 320 10 t320 -20 V360 H0Z' fill='%231b414b' opacity='.6'/%3E%3Cg stroke='%23f3f7f6' stroke-width='5' stroke-linecap='round' opacity='.9'%3E%3Cpath d='M120 190 l30 -40 M150 190 l30 -40'/%3E%3Cpath d='M420 200 l34 -44 M456 200 l34 -44'/%3E%3C/g%3E%3Ccircle cx='300' cy='120' r='42' fill='%23ffb340'/%3E%3Ctext x='50' y='74' font-family='sans-serif' font-size='26' font-weight='bold' fill='%23f3f7f6'%3E水乡与龙舟%3C/text%3E%3C/svg%3E" alt="专题封面：河涌水面与龙舟船桨的插画" width="640" height="360">
+          </figure>
+          <div class="dg-topic-body">
+            <span class="dg-status soon">筹备中 · 12 月上线</span>
+            <h3>水乡与龙舟</h3>
+            <p>跟着龙舟队训练一整季，记录麻涌、中堂水网地带的生活节奏与节庆传统。</p>
+            <ul class="dg-topic-list">
+              <li>《凌晨五点的河面》· 何知遥</li>
+              <li>《桨手的午饭》· 陈屿</li>
+              <li>《端午前三十天》· 林砚舟</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者矩阵 -->
+  <section class="dg-section" id="dg-authors" aria-labelledby="dg-authors-title">
+    <div class="dg-wrap">
+      <div class="dg-section-head">
+        <span class="dg-kicker">Creators</span>
+        <h2 id="dg-authors-title">创作者矩阵：东莞精品一号w精品认证的本地影像作者</h2>
+        <p>他们长期生活、工作在这座城市，用镜头持续记录身边的变化，是内容生态里最重要的部分。</p>
+      </div>
+      <div class="dg-authors">
+        <article class="dg-author">
+          <span class="dg-avatar" style="background:#0f6b73">林</span>
+          <div class="dg-author-main">
+            <h3>林砚舟</h3>
+            <div class="dg-author-field">城市纪录 · 街景光影</div>
+            <div class="dg-author-nums">作品 86 · 粉丝 4.2 万</div>
+            <p>东莞本地摄影师，专注清晨与傍晚的街巷光线。习惯连续多日蹲守同一路口，追求自然发生的瞬间。代表作为《老城骑楼晨光》系列，擅长用环境声建立空间感。</p>
+          </div>
+        </article>
+
+        <article class="dg-author">
+          <span class="dg-avatar" style="background:#c0642a">苏</span>
+          <div class="dg-author-main">
+            <h3>苏槿</h3>
+            <div class="dg-author-field">手作DIY · 人物访谈</div>
+            <div class="dg-author-nums">作品 54 · 粉丝 2.7 万</div>
+            <p>曾在文创机构工作五年，擅长与手艺人沟通并拆解工序。她的访谈节奏缓慢、问题具体，常能问出老师傅年轻时的故事。近年持续跟进竹编与木作题材。</p>
+          </div>
+        </article>
+
+        <article class="dg-author">
+          <span class="dg-avatar" style="background:#1b414b">陈</span>
+          <div class="dg-author-main">
+            <h3>陈屿</h3>
+            <div class="dg-author-field">行业观察 · 深度记录</div>
+            <div class="dg-author-nums">作品 41 · 粉丝 3.5 万</div>
+            <p>前制造业从业者，对车间流程与供应链细节非常熟悉。他的片子少有旁白，强调用画面和原声说明问题。《工厂夜班》上线后引发大量产业工人留言。</p>
+          </div>
+        </article>
+
+        <article class="dg-author">
+          <span class="dg-avatar" style="background:#2f8a6e">何</span>
+          <div class="dg-author-main">
+            <h3>何知遥</h3>
+            <div class="dg-author-field">城市探索 · 水乡题材</div>
+            <div class="dg-author-nums">作品 63 · 粉丝 3.1 万</div>
+            <p>在麻涌长大的纪录片爱好者，熟悉水网地带的大小河涌与村落。喜欢拍人物休息时的状态，认为松弛的瞬间比高潮更有说服力。正在筹备龙舟专题。</p>
+          </div>
+        </article>
+
+        <article class="dg-author">
+          <span class="dg-avatar" style="background:#e08d13">罗</span>
+          <div class="dg-author-main">
+            <h3>罗一戈</h3>
+            <div class="dg-author-field">教程干货 · 实用技巧</div>
+            <div class="dg-author-nums">作品 97 · 粉丝 5.8 万</div>
+            <p>手机摄影教学创作者，擅长把复杂的曝光与调色知识拆成可执行的步骤。他的教程都会给出实际参数和拍摄清单，社区评价是“照着做就能出片”。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户口碑 + 图文索引 -->
+  <section class="dg-section" id="dg-voice" aria-labelledby="dg-voice-title">
+    <div class="dg-wrap">
+      <div class="dg-section-head">
+        <span class="dg-kicker">Voices</span>
+        <h2 id="dg-voice-title">用户口碑与图文索引：社区里的真实反馈</h2>
+        <p>来自观众、创作者与合作伙伴的评价，以及本期内容的文字索引，方便快速检索。</p>
+      </div>
+      <div class="dg-split">
+        <div>
+          <div class="dg-comments">
+            <article class="dg-comment">
+              <div class="dg-comment-top">
+                <span class="dg-avatar" style="background:#0f6b73">阿</span>
+                <div>
+                  <div class="dg-comment-name">阿成在路上</div>
+                  <div class="dg-comment-when">11 月 20 日</div>
+                </div>
+              </div>
+              <div class="dg-stars">★★★★★</div>
+              <p>在东莞住了十一年，看《工厂夜班》那集突然有点鼻酸。没有解说，全是真实的声音，这才是我每天路过的城市。</p>
+            </article>
+
+            <article class="dg-comment">
+              <div class="dg-comment-top">
+                <span class="dg-avatar" style="background:#c0642a">手</span>
+                <div>
+                  <div class="dg-comment-name">手作小满</div>
+                  <div class="dg-comment-when">11 月 18 日</div>
+                </div>
+              </div>
+              <div class="dg-stars">★★★★★</div>
+              <p>竹编那集的工序讲得很清楚，我是做木作的，看完立刻去翻了他们的拍摄清单，细节到位，值得信赖。</p>
+            </article>
+
+            <article class="dg-comment">
+              <div class="dg-comment-top">
+                <span class="dg-avatar" style="background:#1b414b">夜</span>
+                <div>
+                  <div class="dg-comment-name">夜航船</div>
+                  <div class="dg-comment-when">11 月 16 日</div>
+                </div>
+              </div>
+              <div class="dg-stars">★★★★☆</div>
+              <p>画面质感很稳，就是希望更新再快一点。专题页能按镇街筛选就更好了，找自己家附近的内容方便。</p>
+            </article>
+
+            <article class="dg-comment">
+              <div class="dg-comment-top">
+                <span class="dg-avatar" style="background:#2f8a6e">南</span>
+                <div>
+                  <div class="dg-comment-name">南城读书人</div>
+                  <div class="dg-comment-when">11 月 14 日</div>
+                </div>
+              </div>
+              <div class="dg-stars">★★★★★</div>
+              <p>带小孩一起看的，比刷短视频强。每集后面都有文字索引，可以顺着了解街道历史，作为本地内容平台很难得。</p>
+            </article>
+
+            <article class="dg-comment">
+              <div class="dg-comment-top">
+                <span class="dg-avatar" style="background:#e08d13">拍</span>
+                <div>
+                  <div class="dg-comment-name">拍片的老周</div>
+                  <div class="dg-comment-when">11 月 12 日</div>
+                </div>
+              </div>
+              <div class="dg-stars">★★★★★</div>
+              <p>投稿过一次，编辑给的精剪建议非常具体，连镜头顺序都标了。这种支持对新人创作者很重要，会继续投。</p>
+            </article>
+
+            <article class="dg-comment">
+              <div class="dg-comment-top">
+                <span class="dg-avatar" style="background:#7a5a9a">合</span>
+                <div>
+                  <div class="dg-comment-name">合作方 · 莞味食品</div>
+                  <div class="dg-comment-when">11 月 10 日</div>
+                </div>
+              </div>
+              <div class="dg-stars">★★★★★</div>
+              <p>我们委托拍摄过一支品牌短片，从勘景到成片沟通顺畅，交付周期准确，成片在门店播放后反馈很好，专业。</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="dg-index">
+          <article class="dg-index-item">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23dceced'/%3E%3Crect x='40' y='120' width='120' height='140' fill='%230f6b73'/%3E%3Crect x='180' y='70' width='70' height='190' fill='%231b414b'/%3E%3Crect x='270' y='150' width='90' height='110' fill='%23e08d13'/%3E%3Ccircle cx='90' cy='70' r='30' fill='%23ffb340'/%3E%3C/svg%3E" alt="图文索引缩略图：城市街区楼宇与路口色块构成" width="400" height="300">
+            <div class="dg-index-body">
+              <h3>路口观察：东莞的十字路口为何值得拍</h3>
+              <p>从车流、行人与红绿灯节奏切入，整理拍摄机位与安全注意事项。</p>
+              <div class="dg-meta"><span>城市探索</span><span>阅读 2.3 万</span></div>
+            </div>
+          </article>
+
+          <article class="dg-index-item">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f6b352'/%3E%3Cg fill='%23803d1c'%3E%3Crect x='50' y='160' width='300' height='90' rx='12'/%3E%3Crect x='120' y='90' width='160' height='60' rx='10'/%3E%3C/g%3E%3Ccircle cx='330' cy='70' r='28' fill='%23fff3dd'/%3E%3Cg stroke='%23803d1c' stroke-width='8' stroke-linecap='round'%3E%3Cpath d='M90 130 h30 M300 130 h26'/%3E%3C/g%3E%3C/svg%3E" alt="图文索引缩略图：糖水铺与街边小店的暖色构图" width="400" height="300">
+            <div class="dg-index-body">
+              <h3>糖水铺的镜头语言：小店拍摄的五个细节</h3>
+              <p>蒸汽、手部动作、点单对话，如何用小空间讲出人物关系。</p>
+              <div class="dg-meta"><span>教程干货</span><span>阅读 1.8 万</span></div>
+            </div>
+          </article>
+
+          <article class="dg-index-item">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%231b414b'/%3E%3Ccircle cx='200' cy='150' r='70' fill='none' stroke='%23ffb340' stroke-width='8'/%3E%3Cpath d='M180 120 l60 30 l-60 30z' fill='%23f3f7f6'/%3E%3Cg stroke='%232f8a6e' stroke-width='6'%3E%3Cpath d='M40 250 h320'/%3E%3Cpath d='M60 60 h100'/%3E%3C/g%3E%3C/svg%3E" alt="图文索引缩略图：播放按钮与影像档案的几何图形" width="400" height="300">
+            <div class="dg-index-body">
+              <h3>影像档案怎么建：我们的素材命名与归档规范</h3>
+              <p>项目编号、机位记录、授权书存放方式，一份可套用的整理模板。</p>
+              <div class="dg-meta"><span>经验分享</span><span>阅读 1.1 万</span></div>
+            </div>
+          </article>
+
+          <article class="dg-index-item">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%232f8a6e'/%3E%3Cpath d='M0 220 q100 -60 200 0 t200 -30 V300 H0Z' fill='%230d2b33' opacity='.6'/%3E%3Ccircle cx='300' cy='80' r='36' fill='%23ffb340'/%3E%3Cg stroke='%23f3f7f6' stroke-width='6' stroke-linecap='round'%3E%3Cpath d='M70 190 l20 -46 M96 190 l20 -46'/%3E%3C/g%3E%3C/svg%3E" alt="图文索引缩略图：河涌与船桨的绿色水面插画" width="400" height="300">
+            <div class="dg-index-body">
+              <h3>水域拍摄安全攻略：器材防水与船拍经验</h3>
+              <p>龙舟跟拍的防护清单，含防水袋、稳定器与落水应急预案。</p>
+              <div class="dg-meta"><span>实用技巧</span><span>阅读 1.5 万</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 企业动态 + 合作墙 -->
+  <section class="dg-section" id="dg-dynamic" aria-labelledby="dg-dynamic-title">
+    <div class="dg-wrap">
+      <div class="dg-section-head">
+        <span class="dg-kicker">Updates</span>
+        <h2 id="dg-dynamic-title">企业动态：东莞精品一号w精品的官方发布</h2>
+        <p>品牌资讯、内容更新与征集赛进展会在此同步，确保信息透明、可追溯。</p>
+      </div>
+      <div class="dg-split">
+        <ul class="dg-timeline">
+          <li>
+            <time>2026 年 11 月 22 日</time>
+            <h3>《街巷里的东莞》第 3 季第 6 集上线</h3>
+            <p>本集拍摄中堂渡口，记录摆渡人一天的往返与闲聊，片长 14 分钟，已同步更新专题目录。</p>
+          </li>
+          <li>
+            <time>2026 年 11 月 15 日</time>
+            <h3>2026 城市影像征集赛报名开启</h3>
+            <p>面向所有在东莞生活、工作、学习的人开放，单人或小组均可报名，截稿日期为 12 月 20 日。</p>
+          </li>
+          <li>
+            <time>2026 年 11 月 8 日</time>
+            <h3>创作者设备支持计划扩容</h3>
+            <p>新增一批手持稳定器与无线麦克风，认证创作者可在线申请借用，最长 14 天。</p>
+          </li>
+          <li>
+            <time>2026 年 10 月 30 日</time>
+            <h3>官方网站图文索引功能上线</h3>
+            <p>所有自制内容配套文字索引，可按镇街、题材、作者三种方式检索，便于观看与研究。</p>
+          </li>
+          <li>
+            <time>2026 年 10 月 18 日</time>
+            <h3>与莞味食品达成年度内容合作</h3>
+            <p>双方将围绕本地饮食文化联合制作 4 支短片，第一支预计 12 月上线。</p>
+          </li>
+        </ul>
+        <div class="dg-partners">
+          <div class="dg-partner">莞味食品<small>年度影像合作</small></div>
+          <div class="dg-partner">松湖文创园<small>场地支持伙伴</small></div>
+          <div class="dg-partner">东莞手作协会<small>专题共创伙伴</small></div>
+          <div class="dg-partner">麻涌龙舟队<small>拍摄协作伙伴</small></div>
+          <div class="dg-partner">本地影像器材行<small>设备支持伙伴</small></div>
+          <div class="dg-partner">镇街文化站<small>档案共建伙伴</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ + 投稿 CTA -->
+  <section class="dg-section" id="dg-faq" aria-labelledby="dg-faq-title">
+    <div class="dg-wrap">
+      <div class="dg-section-head">
+        <span class="dg-kicker">Help</span>
+        <h2 id="dg-faq-title">帮助中心：关于东莞精品一号w精品的常见问题</h2>
+        <p>投稿、版权、合作与观看相关的问题，都能在这里找到答复。</p>
+      </div>
+      <div class="dg-faq">
+        <details>
+          <summary>如何向东莞精品一号w精品投稿？</summary>
+          <p>点击页面上方导航的“帮助中心”或页面底部的投稿入口，填写作品名称、简介、拍摄地点与素材链接即可。建议提供完整工程文件与授权说明，审核周期一般为 7 个工作日。</p>
+        </details>
+        <details>
+          <summary>投稿对设备和画质有什么要求？</summary>
+          <p>不限设备，手机拍摄同样欢迎，但需保证画面稳定、声音清晰、素材完整。推荐分辨率 1080P 以上，竖屏作品请提供横屏版本或说明使用场景。</p>
+        </details>
+        <details>
+          <summary>作品版权归属如何约定？</summary>
+          <p>创作者保留署名权与原始著作权，官方网站获得在站内展示、宣传与专题共创范围内的非独占使用权。涉及商业合作会另行签署授权协议，全部正版合规。</p>
+        </details>
+        <details>
+          <summary>是否接受外地创作者拍摄东莞题材？</summary>
+          <p>接受。我们更看重内容是否具体、真实、有本地细节，而不是作者户籍。若需要本地协拍与场地协调，可在投稿中说明，编辑部会协助对接。</p>
+        </details>
+        <details>
+          <summary>品牌或机构如何发起影像合作？</summary>
+          <p>可通过帮助中心提交合作需求，注明用途、预算区间与交付时间。我们会在 3 个工作日内回复，并提供过往案例与执行流程说明。</p>
+        </details>
+        <details>
+          <summary>专题内容为什么更新有快有慢？</summary>
+          <p>专题按季度规划，涉及实地勘景、人物沟通与授权确认，周期较长。更新状态会在专题卡片上标注，已上线集数与后续计划保持同步。</p>
+        </details>
+        <details>
+          <summary>网站内容可以转载吗？</summary>
+          <p>非商业用途可注明来源后转载，商业用途需获得书面授权。所有内容均为原创或已获正版授权，请勿二次剪辑用于其他平台售卖。</p>
+        </details>
+        <details>
+          <summary>征集赛的评选标准是什么？</summary>
+          <p>综合内容真实度、叙事完整度、影像品质与本地相关性四项评分，社区投票占一定权重。结果将在官方网站与企业动态中公示。</p>
+        </details>
+      </div>
+
+      <div class="dg-cta" id="dg-cta" style="margin-top:30px;">
+        <div>
+          <h2>把你的东莞，交给我们一起记录</h2>
+          <p>2026 城市影像征集赛正在报名中，不限设备、不限身份。优秀作品将进入东莞精品一号w精品官方片单，并获得联合出品与展映机会。</p>
+        </div>
+        <div class="dg-cta-side">
+          <button class="dg-btn dg-btn-amber" data-dg-submit>立即投稿报名</button>
+          <button class="dg-btn dg-btn-ghost" data-dg-share>分享本页</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="dg-footer">
+  <div class="dg-wrap">
+    <div class="dg-footer-grid">
+      <div>
+        <div class="dg-footer-brand">东莞精品一号w精品</div>
+        <p>东莞本土原创影像品牌与城市生活视频社区，持续运营中。我们以匠心记录街巷、手艺与产业，为创作者与企业搭建高品质内容生态。</p>
+        <p>官方网站 · 官方发布 · 正版高清 · 用户至上</p>
+      </div>
+      <div>
+        <h3>内容导航</h3>
+        <ul>
+          <li><a href="#dg-focus">焦点内容</a></li>
+          <li><a href="#dg-essay">城市解析</a></li>
+          <li><a href="#dg-topics">专题企划</a></li>
+          <li><a href="#dg-authors">创作者矩阵</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>社区与帮助</h3>
+        <ul>
+          <li><a href="#dg-voice">用户口碑</a></li>
+          <li><a href="#dg-dynamic">企业动态</a></li>
+          <li><a href="#dg-faq">帮助中心</a></li>
+          <li><a href="#dg-cta">投稿报名</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>联系我们</h3>
+        <p>合作邮箱：brand@dgno1.studio</p>
+        <p>投稿咨询：工作日 10:00–18:00</p>
+        <p>办公地址：广东省东莞市莞城街道</p>
+      </div>
+    </div>
+    <div class="dg-footer-bottom">
+      <span>© 2026 东莞精品一号w精品 版权所有 · 官方网站</span>
+      <span>粤ICP备2026000000号 · 持续运营中</span>
+    </div>
+  </div>
+</footer>
+
+<button class="dg-totop" id="dg-totop" aria-label="回到顶部">↑</button>
+
+<div class="dg-modal" id="dg-modal" role="dialog" aria-modal="true" aria-labelledby="dg-modal-title">
+  <div class="dg-modal-box">
+    <button class="dg-modal-close" id="dg-modal-close" aria-label="关闭弹窗">×</button>
+    <h3 id="dg-modal-title">投稿与报名</h3>
+    <p id="dg-modal-desc">填写基本信息，编辑部将在 7 个工作日内与你联系。</p>
+    <form id="dg-modal-form">
+      <label class="dg-field">称呼
+        <input type="text" name="name" placeholder="怎么称呼你" required>
+      </label>
+      <label class="dg-field">联系方式
+        <input type="text" name="contact" placeholder="邮箱或常用社交账号" required>
+      </label>
+      <label class="dg-field">作品或想法简介
+        <textarea name="idea" placeholder="拍摄地点、主题、时长或你想报名的项目"></textarea>
+      </label>
+      <button class="dg-btn dg-btn-solid" type="submit">提交</button>
+    </form>
+  </div>
+</div>
+
+<div class="dg-toast" id="dg-toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  "use strict";
+
+  var toastEl = document.getElementById('dg-toast');
+  var toastTimer = null;
+  function showToast(msg){
+    if(!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add('is-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){
+      toastEl.classList.remove('is-show');
+    }, 2200);
+  }
+
+  /* 移动端导航 */
+  var burger = document.getElementById('dg-burger');
+  var nav = document.getElementById('dg-nav');
+  if(burger && nav){
+    burger.addEventListener('click', function(){
+      var open = nav.classList.toggle('is-open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      burger.textContent = open ? '×' : '☰';
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A' && window.innerWidth <= 760){
+        nav.classList.remove('is-open');
+        burger.setAttribute('aria-expanded','false');
+        burger.textContent = '☰';
+      }
+    });
+  }
+
+  /* 搜索反馈 */
+  var searchForm = document.getElementById('dg-search-form');
+  var searchInput = document.getElementById('dg-search-input');
+  var searchFeedback = document.getElementById('dg-search-feedback');
+  if(searchForm && searchInput && searchFeedback){
+    searchForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      var q = searchInput.value.trim();
+      if(!q){
+        searchFeedback.textContent = '请输入关键词，例如“街巷”“竹编”“教程”。';
+      }else{
+        searchFeedback.textContent = '已为你检索「' + q + '」，可在焦点内容与专题企划中查看相关条目。';
+        var target = document.getElementById('dg-focus');
+        if(target){ target.scrollIntoView({behavior:'smooth', block:'start'}); }
+      }
+      searchFeedback.classList.add('is-on');
+    });
+  }
+
+  /* 点赞 */
+  document.querySelectorAll('[data-dg-like]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var meta = btn.closest('article') || document;
+      var numEl = meta.querySelector('[data-dg-like-num]');
+      var num = numEl ? parseInt(numEl.getAttribute('data-dg-like-num'), 10) : 0;
+      var liked = btn.classList.toggle('is-liked');
+      if(numEl){
+        var next = liked ? num + 1 : Math.max(0, num - 1);
+        numEl.setAttribute('data-dg-like-num', next);
+        numEl.textContent = next;
+      }
+      showToast(liked ? '已点赞，感谢支持原创内容' : '已取消点赞');
+    });
+  });
+
+  /* 收藏 */
+  document.querySelectorAll('[data-dg-save]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var saved = btn.classList.toggle('is-saved');
+      btn.textContent = saved ? '★ 已收藏' : '☆ 收藏';
+      showToast(saved ? '已加入收藏，可在个人中心查看' : '已取消收藏');
+    });
+  });
+
+  /* 分享 / 复制链接 */
+  function copyText(text){
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      return navigator.clipboard.writeText(text);
+    }
+    return new Promise(function(resolve, reject){
+      try{
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        resolve();
+      }catch(err){ reject(err); }
+    });
+  }
+  document.querySelectorAll('[data-dg-share]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      copyText(window.location.href).then(function(){
+        showToast('链接已复制，可分享给朋友');
+      }).catch(function(){
+        showToast('复制失败，请手动复制地址栏链接');
+      });
+    });
+  });
+
+  /* 评论提示 */
+  document.querySelectorAll('[data-dg-comment]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      showToast('评论区已开放，欢迎留下你的看法');
+      var voice = document.getElementById('dg-voice');
+      if(voice){ voice.scrollIntoView({behavior:'smooth', block:'start'}); }
+    });
+  });
+
+  /* 投稿弹窗 */
+  var modal = document.getElementById('dg-modal');
+  var modalClose = document.getElementById('dg-modal-close');
+  var modalForm = document.getElementById('dg-modal-form');
+  function openModal(){
+    if(modal){ modal.classList.add('is-open'); }
+  }
+  function closeModal(){
+    if(modal){ modal.classList.remove('is-open'); }
+  }
+  document.querySelectorAll('[data-dg-submit]').forEach(function(btn){
+    btn.addEventListener('click', openModal);
+  });
+  if(modalClose){ modalClose.addEventListener('click', closeModal); }
+  if(modal){
+    modal.addEventListener('click', function(e){
+      if(e.target === modal){ closeModal(); }
+    });
+  }
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){ closeModal(); }
+  });
+  if(modalForm){
+    modalForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      closeModal();
+      modalForm.reset();
+      showToast('提交成功，编辑部将在 7 个工作日内联系你');
+    });
+  }
+
+  /* 回到顶部 */
+  var totop = document.getElementById('dg-totop');
+  if(totop){
+    window.addEventListener('scroll', function(){
+      if(window.scrollY > 420){ totop.classList.add('is-show'); }
+      else{ totop.classList.remove('is-show'); }
+    }, {passive:true});
+    totop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  /* 数据滚动 */
+  var counters = document.querySelectorAll('[data-dg-count]');
+  if(counters.length && 'IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(!entry.isIntersecting){ return; }
+        var el = entry.target;
+        var target = parseInt(el.getAttribute('data-dg-count'), 10) || 0;
+        var small = el.querySelector('small');
+        var suffix = small ? small.outerHTML : '';
+        var start = 0;
+        var step = Math.max(1, Math.round(target / 34));
+        var timer = setInterval(function(){
+          start += step;
+          if(start >= target){ start = target; clearInterval(timer); }
+          el.innerHTML = start + suffix;
+        }, 26);
+        io.unobserve(el);
+      });
+    }, {threshold:.5});
+    counters.forEach(function(el){ io.observe(el); });
+  }else{
+    counters.forEach(function(el){
+      var target = parseInt(el.getAttribute('data-dg-count'), 10) || 0;
+      var small = el.querySelector('small');
+      el.innerHTML = target + (small ? small.outerHTML : '');
+    });
+  }
+})();
+</script>
+</body>
+                </html>
